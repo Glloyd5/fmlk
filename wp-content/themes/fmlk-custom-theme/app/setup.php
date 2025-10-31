@@ -153,3 +153,16 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+/* Conditionally attach js file if page is contact */
+add_action('wp_enqueue_scripts', function () {
+    if (is_page('contact')) {
+        wp_enqueue_script(
+            'contact-form',
+            get_theme_file_uri('resources/js/contact-form.js'),
+            ['jquery'],
+            null,
+            true
+        );
+    }
+});

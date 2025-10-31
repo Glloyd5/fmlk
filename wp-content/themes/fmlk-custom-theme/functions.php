@@ -58,3 +58,8 @@ collect(['setup', 'filters'])
             );
         }
     });
+
+
+/* Include form handler */
+require_once get_theme_file_path('app/form-handlers/contact-form.php');
+

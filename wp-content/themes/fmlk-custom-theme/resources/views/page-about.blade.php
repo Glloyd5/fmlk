@@ -27,9 +27,9 @@
         <img src="{{ get_stylesheet_directory_uri() }}/resources/images/Marcel.png"
             class="w-full lg:w-1/2 h-auto order-1 lg:order-1 rounded-2xl" alt="CAB logo">
         <div class="flex flex-col gap-5 lg:w-1/2 order-2 lg:order-2">
-            <h2 class="text-5xl text-primary text-center lg:text-left">Meet Marcell</h2>
+            <h2 class="text-5xl text-primary text-center lg:text-left">Meet Marcel</h2>
             <p>
-                Chef Maurice Martel is the creative force behind Fat Man Little Kitchen, blending his Indigenous heritage
+                Chef Marcel Martell is the creative force behind Fat Man Little Kitchen, blending his Indigenous heritage
                 with a passion for bold, modern flavours.
             </p>
             <p>
@@ -210,7 +210,7 @@
             </h3>
             <div id="accordion-color-body-7" class="hidden" aria-labelledby="accordion-color-heading-7">
                 <div class="p-5 border border-t-0 border-slate-900 bg-black text-white">
-                    <p class="mb-2">TBD.</p>
+                    <p class="mb-2">We typically do drop off only, but we do offer full service upon request.</p>
                 </div>
             </div>
         </div>
