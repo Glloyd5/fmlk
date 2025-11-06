@@ -29,14 +29,14 @@
                 <div
                     class="group  border-zinc-700 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-lg">
                     <a href="<?= get_permalink($post->ID); ?>">
-                        <img class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity duration-300"
+                        <img class="w-full h-48 object-cover  "
                             src="<?= esc_url($image_url); ?>" alt="<?= esc_attr(get_the_title($post->ID)); ?>" />
                     </a>
 
                     <div class="p-6">
                         <a href="<?= get_permalink($post->ID); ?>">
                             <h3
-                                class="mb-3 text-xl font-semibold text-black group-hover:text-red-300 transition-colors duration-300">
+                                class="mb-3 text-xl font-semibold text-black group-hover:text-red-700 transition-colors duration-300">
                                 <?= esc_html(get_the_title($post->ID)); ?>
                             </h3>
                         </a>
