@@ -17,7 +17,7 @@
 
         if ($posts): ?>
         <div class="my-16">
-            <h2 class="text-5xl font-extrabold text-center mb-8 text-red-600 uppercase tracking-wide mt-10">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-8 text-red-600 uppercase tracking-wide mt-10">
                 <?= esc_html($category->name); ?>S
             </h2>
 
@@ -27,7 +27,7 @@
                 $image_url = get_the_post_thumbnail_url($post->ID, 'medium_large') ?:  get_stylesheet_directory_uri().'/resources/images/gangster_spices.png';
                       ?>
                 <div
-                    class="group bg-zinc-900 border border-zinc-700 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-lg">
+                    class="group  border-zinc-700 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-lg">
                     <a href="<?= get_permalink($post->ID); ?>">
                         <img class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity duration-300"
                             src="<?= esc_url($image_url); ?>" alt="<?= esc_attr(get_the_title($post->ID)); ?>" />
