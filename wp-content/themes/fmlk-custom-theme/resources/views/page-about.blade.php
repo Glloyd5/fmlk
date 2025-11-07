@@ -96,10 +96,10 @@
             <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
                 <div class="p-5 border border-b-0 border-slate-900 bg-black text-white">
                     <p class="mb-2">Our hot sauces range quite a bit in heat level.</p>
-                    <p>Our <a href="https://flowbite.com/figma/" class="text-red-500 hover:underline">Not Hot Hot Sauce</a> is mild 
+                    <p>Our <a href="/product/not-hot-hot-sauce/" class="text-red-500 hover:underline">Not Hot Hot Sauce</a> is mild 
                         and can be enjoyed worry free by anyone.</p>
                     <p>
-                        while our <a href="https://flowbite.com/figma/" class="text-red-500 hover:underline">Very Hot Hot Sauce</a>
+                        while our <a href="/product/very-hot-hot-sauce/" class="text-red-500 hover:underline">Very Hot Hot Sauce</a>
                         is extremely hot and should be used with caution.
                     </p>
                 </div>
@@ -142,7 +142,7 @@
                 <div class="p-5 border border-t-0 border-slate-900 bg-black text-white">
                     <p class="mb-2">Yes, we do offer seasonal gift baskets of our product range.</p>
                     <p class="mb-2">If you're looking for a custom gift basket please
-                        <a href="https://flowbite.com/pro/" class="text-red-500 hover:underline">contact us</a>
+                        <a href="contact" class="text-red-500 hover:underline">contact us</a>
                         and we can set something up!
                     </p>
                     <p class="mb-2">We also offer our sauces white label, so you can customize them with your own logo for an event or gift.</p>

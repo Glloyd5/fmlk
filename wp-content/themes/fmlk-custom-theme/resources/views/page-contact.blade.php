@@ -11,9 +11,9 @@
 
             {{-- Reason --}}
             <div>
-                <label for="reason" class="block mb-2 font-medium">Reason for Contact</label>
+                <label for="reason" class="block mb-2 font-medium">What do you want to talk about?</label>
                 <select name="reason" id="reason" required class="w-full p-2 border rounded-md">
-                    <option value="">Select a reason</option>
+                    <option value="">Select a topic</option>
                     <option value="general">General Inquiry </option>
                     <option value="catering">Catering Request</option>
                     <option value="gift-box">Gift Box Inquiry</option>
