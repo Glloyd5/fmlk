@@ -2,12 +2,12 @@
 
 @section('content')
     <section class="pt-5 my-20">
-        <h1 class="text-5xl font-bold text-primary">Contact Us</h1>
+        <h1 class="text-5xl mb-10 font-bold text-primary">Contact Us</h1>
 
         <form id="contact-form" class="space-y-6 bg-white p-6 rounded-lg shadow-md" method="POST"
             action="{{ esc_url(admin_url('admin-post.php')) }}">
             @csrf
-            <input type="hidden" name="action" value="contact_form">
+            <input type="hidden" name="action" value="send_catering_request">
 
             {{-- Reason --}}
             <div>
