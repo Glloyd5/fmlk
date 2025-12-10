@@ -3,7 +3,7 @@
 @section('content')
 <section class="container mx-auto px-6 py-20">
   <!-- Hero -->
-  <div class="max-w-3xl mx-auto mb-16">
+  <div class="max-w-3xl mb-16">
     <h1 class="text-3xl md:text-5xl font-extrabold text-black mb-6">
       Catering with Heart & Heritage
     </h1>
@@ -39,9 +39,9 @@
   </div>
 
   <!-- Menu Highlight Section -->
-  <div class="text-center mb-20">
-    <h2 class="text-3xl font-bold text-black mb-6">Why choose us?</h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="mb-20">
+    <h2 class="text-3xl font-bold text-black mb-10">Why choose us?</h2>
+    <div class="grid text-center sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition">
         <h3 class="text-xl font-semibold text-red-600 mb-2">Custom Menu</h3>
         <p class="text-gray-700 text-sm">We work with you to craft a custom menu of delicious food you want to eat.</p>
