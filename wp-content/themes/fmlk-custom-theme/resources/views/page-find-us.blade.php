@@ -13,13 +13,13 @@
     <section class="my-20 flex justify-center flex-col gap-5">
         <h2 id="stores" class="text-5xl">Friends of the Fat Man</h2>
         <section class="container mx-auto px-4 py-20">
-  <h2 class="text-4xl md:text-5xl font-extrabold text-center text-red-600 uppercase tracking-wide mb-12">
-    Find Our Products
-  </h2>
 
-  <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">
-    You can find <span class="font-semibold text-black">Fat Man Little Kitchen</span> products at these partner locations across Alberta.
-  </p>
+          <div class="flex justify-center mb-20">
+            <iframe class="rounded-xl" src="https://www.google.com/maps/d/u/1/embed?mid=12k58C1TE2ZRI-2mQ1H7rOvAYituJJcY&ehbc=2E312F&noprof=1"
+                width="1000" height="600">
+            </iframe>
+        </div>
+
 
   <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
     <!-- I.A.M Collective -->
@@ -37,7 +37,7 @@
       </ul>
       <a href="https://iamcollective.ca" target="_blank"
         class="inline-flex items-center text-sm font-medium text-white bg-red-600 rounded-md px-4 py-2 hover:bg-red-700 transition">
-        Visit Website
+        Website
         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 14 10">
           <path stroke-linecap="round" stroke-linejoin="round" d="M1 5h12m0 0L9 1m4 4L9 9" />
         </svg>
@@ -48,12 +48,19 @@
     <div class="group border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition-all p-6">
       <h3 class="text-2xl font-bold text-red-600 mb-2 group-hover:text-red-700">Rosario’s Pub – Edmonton</h3>
       <p class="text-gray-700 mb-3 leading-relaxed">
-        A long-standing neighbourhood pub where you can enjoy great food and discover our products.
+        A long-standing neighbourhood pub where you can enjoy great food and karaoke every night!
       </p>
       <ul class="text-gray-600 text-sm mb-4 space-y-1">
         <li>11715 108 Ave NW, Edmonton, AB</li>
         <li>Mon–Sun: 11am – 2am</li>
       </ul>
+      <a href="https://www.facebook.com/rosariospub/" target="_blank"
+        class="inline-flex items-center text-sm font-medium text-white bg-red-600 rounded-md px-4 py-2 hover:bg-red-700 transition">
+        Facebook
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 14 10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a>
     </div>
 
     <!-- Petro-Canada -->
@@ -66,13 +73,33 @@
         <li>Hwy 28 & Range Rd 423A<br>Cold Lake, AB</li>
       </ul>
     </div>
-  </div>
-</section>
 
-        <div class="flex justify-center">
-            <iframe class="rounded-xl" src="https://www.google.com/maps/d/u/1/embed?mid=12k58C1TE2ZRI-2mQ1H7rOvAYituJJcY&ehbc=2E312F&noprof=1"
-                width="1000" height="600">
-            </iframe>
-        </div>
+    <!-- Alberta Art Gallery -->
+  <div class="group border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition-all p-6">
+      <h3 class="text-2xl font-bold text-red-600 mb-2 group-hover:text-red-700">Alberta Art Gallery Gift Shop</h3>
+      <p class="text-gray-700 mb-3 leading-relaxed">
+        Alberta’s Home for Creativity and Culture!
+      </p>
+      <p class="text-gray-700 mb-3 leading-relaxed">
+        Located in the heart of downtown Edmonton, the AGA is a vibrant hub for visual arts, learning, and community connection.
+      </p>
+      <ul class="text-gray-600 text-sm mb-4 space-y-1">
+        <li>11715 108 Ave NW, Edmonton, AB</li>
+        <li>Wed: 11am – 5pm</li>
+        <li>Thur: 11am – 7pm</li>
+        <li>Fri - Sun: 11am – 5pm</li>
+      </ul>
+      <a href="https://www.youraga.ca/" target="_blank"
+        class="inline-flex items-center text-sm font-medium text-white bg-red-600 rounded-md px-4 py-2 hover:bg-red-700 transition">
+        Website
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 14 10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  
+</section>
     </section>
 @endsection
