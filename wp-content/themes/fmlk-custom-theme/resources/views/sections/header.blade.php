@@ -10,6 +10,7 @@
           <img src="{{ get_stylesheet_directory_uri() }}/resources/images/FMLK.jpg" alt="Logo"
           class="w-32 md:w-40 lg:w-48 h-auto max-w-full object-contain rounded-4xl">
         </a>
+        <p class="mt-4 text-3xl font-accent text-white">Never trust a skinny cook</p>
       </div>
 
       {{-- Desktop search (≥1360px) --}}
