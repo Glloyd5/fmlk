@@ -16,3 +16,7 @@
 a {
   text-decoration: none;
 }
+
+.font-accent {
+  font-family: 'CandyRound', sans-serif;
+}

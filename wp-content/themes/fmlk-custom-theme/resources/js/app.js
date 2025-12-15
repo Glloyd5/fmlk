@@ -1,5 +1,8 @@
 import 'flowbite';
 
+import '../fonts/CandyRoundBTNRegular.woff2';
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('mobileMenuButton');
   const menu = document.getElementById('mobileMenu');
