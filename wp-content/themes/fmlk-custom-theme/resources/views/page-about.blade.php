@@ -41,13 +41,13 @@
 
 
     <section class="my-20 text-center grid grid-cols-1 md:grid-cols-3 gap-4">
-        <a href="#" class="bg-black text-white rounded-md px-6 py-3 hover:bg-red-600 transition">
-            Request Catering
+        <a href="/catering" class="bg-black text-white rounded-md px-6 py-3 hover:bg-red-600 transition">
+            Catering
         </a>
-        <a href="#" class="bg-black text-white rounded-md px-6 py-3 hover:bg-red-600 transition">
+        <a href="/contact" class="bg-black text-white rounded-md px-6 py-3 hover:bg-red-600 transition">
             Contact Us
         </a>
-        <a href="#" class="bg-black text-white rounded-md px-6 py-3 hover:bg-red-600 transition">
+        <a href="/shop" class="bg-black text-white rounded-md px-6 py-3 hover:bg-red-600 transition">
             Shop
         </a>
     </section>
