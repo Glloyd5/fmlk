@@ -6,8 +6,9 @@
 
         <form id="contact-form" class="space-y-6 bg-white p-6 rounded-lg shadow-md" method="POST"
             action="{{ esc_url(admin_url('admin-post.php')) }}">
-            @csrf
-            <input type="hidden" name="action" value="send_catering_request">
+            {!! wp_nonce_field('contact_form_nonce', 'contact_form_nonce_field', true, false) !!}
+
+            <input type="hidden" name="action" value="contact_form">
 
             {{-- Reason --}}
             <div>
@@ -89,7 +90,8 @@
                     <input type="number" name="gift_budget" id="gift_budget" class="w-full p-2 border rounded-md" />
                 </div>
                 <div>
-                    <label for="gift_message" class="block mb-2 font-medium">Do you have any prefered prodcuts you would like included?</label>
+                    <label for="gift_message" class="block mb-2 font-medium">Do you have any prefered prodcuts you would
+                        like included?</label>
                     <textarea name="gift_message" id="gift_message" rows="3"
                         class="w-full p-2 border rounded-md"></textarea>
                 </div>
@@ -114,16 +116,25 @@
                     <input type="text" name="wl_brand" id="wl_brand" class="w-full p-2 border rounded-md" />
                 </div>
                 <div>
-                    <label for="wl_message" class="block mb-2 font-medium">Tell us about your brand and why you would like a custom sauce</label>
-                    <textarea name="wl_message" id="wl_message" rows="3"
-                        class="w-full p-2 border rounded-md"></textarea>
+                    <label for="wl_message" class="block mb-2 font-medium">Tell us about your brand and why you would like a
+                        custom sauce</label>
+                    <textarea name="wl_message" id="wl_message" rows="3" class="w-full p-2 border rounded-md"></textarea>
                 </div>
             </div>
 
             <button type="submit" class="px-6 py-2 bg-black text-white rounded-md hover:bg-red-600">Submit</button>
         </form>
 
-        <div id="formResponse" class="mt-4 text-center text-lg"></div>
+        @if(request()->get('success'))
+            <div id="formResponse" class="mt-4 text-center text-lg text-green-600">
+                Thanks! Your message has been sent, we will be in touch shortly.
+            </div>
+        @elseif(request()->get('error'))
+            <div id="formResponse" class="mt-4 text-center text-lg text-red-600">
+                Something went wrong. Please try again.
+            </div>
+        @endif
+
     </section>
 
 @endsection
