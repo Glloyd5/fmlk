@@ -4,6 +4,16 @@
     <section class="pt-5 my-20">
         <h1 class="text-5xl mb-10 font-bold text-primary">Contact Us</h1>
 
+        @if(request()->get('success'))
+            <div id="formResponse" class="mt-4 text-center text-lg text-green-600">
+                Thanks! Your message has been sent, we will be in touch shortly.
+            </div>
+        @elseif(request()->get('error'))
+            <div id="formResponse" class="mt-4 text-center text-lg text-red-600">
+                Something went wrong. Please try again.
+            </div>
+        @endif
+
         <form id="contact-form" class="space-y-6 bg-white p-6 rounded-lg shadow-md" method="POST"
             action="{{ esc_url(admin_url('admin-post.php')) }}">
             {!! wp_nonce_field('contact_form_nonce', 'contact_form_nonce_field', true, false) !!}
@@ -124,16 +134,6 @@
 
             <button type="submit" class="px-6 py-2 bg-black text-white rounded-md hover:bg-red-600">Submit</button>
         </form>
-
-        @if(request()->get('success'))
-            <div id="formResponse" class="mt-4 text-center text-lg text-green-600">
-                Thanks! Your message has been sent, we will be in touch shortly.
-            </div>
-        @elseif(request()->get('error'))
-            <div id="formResponse" class="mt-4 text-center text-lg text-red-600">
-                Something went wrong. Please try again.
-            </div>
-        @endif
 
     </section>
 
